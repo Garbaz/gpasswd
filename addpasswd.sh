@@ -1,17 +1,12 @@
 
 # THERE IS NO GUARANTEE THAT THIS SCRIPT IS SECURE!
 
-# Adds given combination of Title, Name and Password to ".p.gpg" in the users home directory. Modify the File variable to change this behaviour.
+# Adds given combination of Title, Name and Password to ".p.gpg" in the users home directory.
+#  Modify the File variable to change this behaviour.
 # The values will be appended in the following form:
-# "$title | $name | $pass"
-# Modify the Delim variable to change the delimiter (Default: '|').
-# The script should be POSIX compliant and therefore work in any shell
-
-#OPTIONS:
-#~~~~~~~~~~~~~~~~~~
-Delim="|"
-File="$HOME/.p.gpg"
-#~~~~~~~~~~~~~~~~~~
+#  "$title | $name | $pass"
+#  Modify the Delim variable to change the delimiter (Default: '|').
+# The script should be POSIX compliant and therefore work in any shell (Tested in bash & sh).
 
 
 title="$1"
