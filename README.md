@@ -2,7 +2,7 @@
 
 # gpasswd
 
-A set of shell scripts to manage passwords using POSIX shell commands and gpg for maximum portablilty. The resulting file is in a readable plaintext format and therefore only requires gpg (or more specifically some form of OpenPGP / AES) to decrypt.
+A set of shell scripts to manage passwords using POSIX shell commands and gpg for maximum portability. The resulting file is in a readable plain-text format and therefore only requires gpg (or more specifically some form of OpenPGP / AES) to decrypt.
 
 *Why not use a password manager like keepass?*
 
@@ -51,7 +51,7 @@ addpasswd.sh [TITLE] [NAME] [PASSWORD]
 
 **Description**
 
-Interactively askes for any parameters not given (e.g. `Pass:`), decrypts the `File`, appends the given combination of Title, Name and Password and encrypts it again.
+Interactively asks for any parameters not given (e.g. `Pass:`), decrypts the `File`, appends the given combination of Title, Name and Password and encrypts it again.
 The values will be appended in the following form:
 ```sh
 "$title $Delim $name $Delim $pass"
@@ -71,7 +71,7 @@ rmpasswd.sh SEARCH_REGEX
 
 **Description**
 
-Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore case), interactively askes which entries should be deleted and ecrypts the chaged `File` again. The interactive prompt will only display the title of each entry.
+Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore case), interactively asks which entries should be deleted and encrypts the changed `File` again. The interactive prompt will only display the title of each entry.
 
 **Todo**
 
