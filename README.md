@@ -5,6 +5,7 @@
 A set of shell scripts to manage passwords using POSIX shell commands and gpg for maximum portablilty. The resulting file is in a readable plaintext format and therefore only requires gpg (or more specifically some form of OpenPGP / AES) to decrypt.
 
 *Why not use a password manager like keepass?*
+
 Because to use a password manager, I need the password manager (Or at least some special software to decrypt the password file) whenever I want to access the passwords. This might not be given on every system.
 
 ## Scripts:
