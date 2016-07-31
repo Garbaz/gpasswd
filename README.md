@@ -16,7 +16,6 @@ Because to use a password manager, I need the password manager (Or at least some
 **Synopsis**
 
 ```sh
-test="Hello World"
 posixpassmgr.sh COMMAND [ARGS]
 ```
 **Description**
