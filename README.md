@@ -15,7 +15,7 @@ Because to use a password manager, I need the password manager (Or at least some
 
 **Synopsis**
 
-```bash
+```sh
 test="Hello World"
 posixpassmgr.sh COMMAND [ARGS]
 ```
@@ -34,7 +34,7 @@ It contains definitions of variables like the file location (`File`) or the deli
 ### getpasswd.sh
 
 **Synopsis**
-```bash
+```sh
 getpasswd.sh SEARCH_REGEX
 ```
 **Description**
@@ -51,7 +51,7 @@ Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore c
 
 **Synopsis**
 
-```bash
+```sh
 addpasswd.sh [TITLE] [NAME] [PASSWORD]
 ```
 
@@ -59,7 +59,7 @@ addpasswd.sh [TITLE] [NAME] [PASSWORD]
 
 Interactively asks for any parameters not given (e.g. `Pass:`), decrypts the `File`, appends the given combination of Title, Name and Password and encrypts it again.
 The values will be appended in the following form:
-```bash
+```sh
 "$title $Delim $name $Delim $pass"
 #Default:
 "$title | $name | $pass"
@@ -72,7 +72,7 @@ The `Delim`iter is defined in conf.sh.
 
 **Synopsis**
 
-```bash
+```sh
 rmpasswd.sh SEARCH_REGEX
 ```
 
@@ -89,7 +89,7 @@ Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore c
 *TODO*
 
 **Synopsis**
-```bash
+```sh
 clippasswd.sh SEARCH_REGEX
 ```
 
