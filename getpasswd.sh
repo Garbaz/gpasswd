@@ -1,1 +1,6 @@
-#TODO: Decrypt and grep
+File="$HOME/.p.gpg"
+if [ -z "$1" ];then
+gpg -d "$File"
+else
+gpg -d "$File" | grep -i "$1"
+fi
