@@ -1,4 +1,7 @@
-File="$HOME/.p.gpg"
+
+Dir="$( dirname "$0")"
+. $Dir/conf.sh
+
 if [ -z "$1" ];then
 gpg -d "$File"
 else

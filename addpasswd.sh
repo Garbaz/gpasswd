@@ -8,6 +8,8 @@
 #  Modify the Delim variable to change the delimiter (Default: '|').
 # The script should be POSIX compliant and therefore work in any shell (Tested in bash & sh).
 
+Dir="$( dirname "$0")"
+. $Dir/conf.sh
 
 title="$1"
 name="$2"
