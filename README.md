@@ -1,6 +1,6 @@
 **THERE IS NO GUARANTEE THAT THESE SCRIPTS ARE SECURE!**
 
-# gpasswd
+# posixpassmgr
 
 A set of shell scripts to manage passwords using POSIX shell commands and gpg for maximum portability. The resulting file is in a readable plain-text format and therefore only requires gpg (or more specifically some form of OpenPGP / AES) to decrypt.
 
@@ -10,21 +10,25 @@ Because to use a password manager, I need the password manager (Or at least some
 
 ## Scripts:
 
-### conf.sh
-This file will be sourced by all other scripts.
-It contains definitions of variables like the file location (`File`) or the delimiter (`Delim`) between fields in the file.
-
-### gpasswd.sh
+### posixpassmgr.sh
 *TODO*
 
 **Synopsis**
 
 ```sh
-gpasswd.sh COMMAND [ARGS]
+posixpassmgr.sh COMMAND [ARGS]
 ```
 **Description**
 
 This script is intended to become an interface for the other scripts like git for git-commit, git-push, et cetera.
+
+
+### conf.sh
+
+**Description**
+This file will be sourced by all other scripts.
+It contains definitions of variables like the file location (`File`) or the delimiter (`Delim`) between fields in the file.
+
 
 ### getpasswd.sh
 
@@ -40,6 +44,7 @@ Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore c
 
 - Allow for password / username only output for piping
 - Allow for "`clear` after X seconds"
+
 
 ### addpasswd.sh
 
@@ -60,6 +65,7 @@ The values will be appended in the following form:
 ```
 The `Delim`iter is defined in conf.sh.
 
+
 ### rmpasswd.sh
 *TODO*
 
@@ -76,6 +82,7 @@ Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore c
 **Todo**
 
 - Allow for forcing non-interactive
+
 
 ### clippasswd.sh
 *TODO*
