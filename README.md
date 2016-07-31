@@ -18,10 +18,12 @@ It contains definitions of variables like the file location (`File`) or the deli
 *TODO*
 
 **Synopsis**
+
 ```sh
 gpasswd.sh COMMAND [ARGS]
 ```
 **Description**
+
 This script is intended to become an interface for the other scripts like git for git-commit, git-push, et cetera.
 
 ### getpasswd.sh
@@ -31,20 +33,24 @@ This script is intended to become an interface for the other scripts like git fo
 getpasswd.sh SEARCH_REGEX
 ```
 **Description**
+
 Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore case) and DISPLAYS THE RESULTS IN PLAIN TEXT (!).
 
 **Todo**
+
 - Allow for password / username only output for piping
 - Allow for "`clear` after X seconds"
 
 ### addpasswd.sh
 
 **Synopsis**
+
 ```sh
 addpasswd.sh [TITLE] [NAME] [PASSWORD]
 ```
 
 **Description**
+
 Interactively askes for any parameters not given (e.g. `Pass:`), decrypts the `File`, appends the given combination of Title, Name and Password and encrypts it again.
 The values will be appended in the following form:
 ```sh
@@ -58,14 +64,21 @@ The `Delim`iter is defined in conf.sh.
 *TODO*
 
 **Synopsis**
+
 ```sh
 rmpasswd.sh SEARCH_REGEX
 ```
 
 **Description**
+
 Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore case), interactively askes which entries should be deleted and ecrypts the chaged `File` again. The interactive prompt will only display the title of each entry.
 
+**Todo**
+
+- Allow for forcing non-interactive
+
 ### clippasswd.sh
+*TODO*
 
 **Synopsis**
 ```sh
@@ -73,3 +86,11 @@ clippasswd.sh SEARCH_REGEX
 ```
 
 **Description**
+
+Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore case) and copies the password of the resulting entry to the X-server's clipboard using `xclip` (Not POSIX compliant).
+If multiple matching entries are found it will interactively ask which entry should be copied. The interactive prompt will only display the title of each entry.
+
+**Todo**
+
+- Allow for copying of username
+- Allow for forcing non-interactive
