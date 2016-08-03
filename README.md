@@ -26,8 +26,13 @@ This script is intended to become an interface for the other scripts like git fo
 ### conf.sh
 
 **Description**
+
 This file will be sourced by all other scripts.
 It contains definitions of variables like the file location (`File`) or the delimiter (`Delim`) between fields in the file.
+
+**Todo**
+
+- Don't source the file, make more secure
 
 
 ### getpasswd.sh
