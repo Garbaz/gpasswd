@@ -88,6 +88,7 @@ Decrypts the `File`, searches for the given string using `grep -i` (-i: Ignore c
 *TODO*
 
 **Synopsis**
+
 ```sh
 clippasswd.sh SEARCH_REGEX
 ```
@@ -101,6 +102,38 @@ If multiple matching entries are found it will interactively ask which entry sho
 
 - Allow for copying of username
 - Allow for forcing non-interactive
+
+
+### changemasterpw.sh
+*TODO*
+
+**Synopsis**
+
+```sh
+changemasterpw.sh [PASSWD]
+```
+
+**Description**
+
+Decrypts `File` and encrypts it with a new password taken either as a parameter (Not recommended) or from STDIN.
+
+### editentry.sh
+*TODO*
+
+
+**Synopsis**
+
+```sh
+editentry.sh [SEARCH_REGEX]
+```
+
+**Description**
+
+Decrypts `File`, searches for given regular expression using `grep -i`, lists Titles of found entries, if multiple were found allows for choice and asks for new values for the respective fields. If no input is given before RETURN/EOF, the old value will be kept. 
+
+**Todo**
+
+- Allow for column specific search
 
 ## TODO:
 
